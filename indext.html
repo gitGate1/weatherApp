@@ -6,6 +6,8 @@
     <title>Weather app</title>
     <link rel="stylesheet" href="src/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="weather-app">
@@ -19,7 +21,7 @@
             <main>
                 <div class="weather-details">
                     <div class="weather-situation">
-                        <h1 id="city">Paris</h1>
+                        <h1 id="city"></h1>
                         <p>Friday 23:03, clear sky <br>
                         Humidity: <strong>70%</strong>, Wind: <strong>1.54km/h</strong></p>
                     </div>
@@ -27,8 +29,8 @@
                         <div class="weather-temp-icon">
                             ⛅
                         </div>
-                        <div class="weather-temp-num">
-                           16 
+                        <div class="weather-temp-num" id="temp">
+                           
                         </div>
                         <div class="weather-temp-unit">
                            ℃ 
