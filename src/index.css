@@ -10,6 +10,38 @@ body{
     border-radius: 10px;
     max-width: 600px;
     background-color: rgb(235, 235, 212);
+    box-shadow: 9px 27px 24px -11px rgba(0,0,0,0.75);
+}
+a{
+    color: rgb(176, 171, 154);
     
 }
+header{
+    border-bottom: 1px solid white;
+    padding: 30px;
+}
+.searchInp{
+    width: 80%;
+    padding: 15px 10px;
+    margin: 7px;
+    background-color:rgb(176, 171, 154) ;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 9px 11px 24px -11px rgba(0,0,0,0.75);
+}
 
+.searchBtn{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(212, 204, 175, 0.865);
+    box-shadow: 9px 11px 24px -11px rgba(0,0,0,0.75);
+}
+
+footer{
+    border-top: 1px solid white;
+    padding: 30px;
+    text-align: center;
+    font-size: 13px;
+}
