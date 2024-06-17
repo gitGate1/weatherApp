@@ -37,8 +37,46 @@ header{
     border-radius: 7px;
     background-color: rgba(212, 204, 175, 0.865);
     box-shadow: 9px 11px 24px -11px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.weather-situation h1{
+    font-size: 48px;
+    margin: 20px 0;
 }
 
+.weather-situation p{
+    opacity: 0.5;
+}
+
+.weather-situation p strong{
+    color: rgb(155, 128, 92);
+}
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-temp{
+    display: flex;
+    margin-top: 15px;
+}
+.weather-temp-icon{
+    font-size: 48px;
+    
+}
+.weather-temp-num{
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(155, 128, 92);
+    
+}
+
+.weather-temp-unit{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+    color:rgb(83, 87, 90)
+}
 footer{
     border-top: 1px solid white;
     padding: 30px;
