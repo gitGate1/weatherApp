@@ -8,10 +8,12 @@ function refreshWeather(response){
     let humidityElement= document.querySelector("#humidity")
     let windElement= document.querySelector("#wind")
     let time= new Date(response.data.time * 1000)
-    
+    let weatherIcon= document.querySelector("#icon")
+    console.log(response)
     city.innerHTML= response.data.city
     temp.innerHTML= Math.round(cityTemp)
     timeElement.innerHTML= formatDate(time)
+    weatherIcon.innerHTML= `<img src=" ${response.data.condition.icon_url}" class="weather-temp-icon"> `
     description.innerHTML= response.data.condition.description
     humidityElement.innerHTML= `Humidity: ${response.data.temperature.humidity}%`
     windElement.innerHTML= `Wind: ${response.data.wind.speed} km/h`
