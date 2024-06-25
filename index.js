@@ -33,6 +33,25 @@ function formatDate(dateString) {
     }
     return `${day} ${hour}:${minute}`;
 }
+function displayforecast(){
+    let forecastElement= document.querySelector("#forecast")
+    days= ["Tue", "Wed", "Thu", "Fri", "Sat"]
+    forecastHtml= ""
+    days.forEach(function (day) {
+        forecastHtml = forecastHtml+ `
+                        <div class="col" >
+                            <div class="weather-forecast-day">${day}</div>
+                            <div class="weather-forecast-icon">⛅</div>
+                            <div class="weather-forecast-temp">
+                                <div class="max-temp">22°</div>
+                                <div class="min-temp">12°</div>
+                            </div>
+                        </div>
+        `
+    });
+
+    forecastElement.innerHTML= forecastHtml
+}
 function cityInfo(city){
     let apiKey= "ac97dbdbo283f0b8fa3e34tfec52460e"
     let apiUrl= `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`
@@ -48,3 +67,4 @@ let formSubmit= document.querySelector('.submit-form')
 formSubmit.addEventListener("submit",searchCity )
 
 cityInfo("paris")
+displayforecast()
