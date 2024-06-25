@@ -3,7 +3,7 @@ body{
     background-color:#02ccfe;
     font-family: roboto, sans-serif;
 }
-.container{
+.weather-app{
     
     margin: 5rem auto;
     padding: 20px;
@@ -57,6 +57,7 @@ header{
     margin: 20px 0;
 }
 
+
 .weather-situation p{
     color: rgb(113, 113, 110);
 }
@@ -67,8 +68,8 @@ header{
 .weather-details{
     display: flex;
     justify-content: space-between;
+    margin: 10px;
 }
-
 .weather-temp{
     display: flex;
     margin-top: 15px;
@@ -92,7 +93,28 @@ header{
     margin: 10px 0;
     color:#22caf9;
 }
+.weather-forcast{
+    margin-top: 20px ;
+   
+    text-align: center;
+}
 
+.weather-forecast .row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.weather-forecast-temp{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.max-temp{
+    margin-right: 5px;
+}
 a{
     color:#3d83bd;
     text-decoration: none;
