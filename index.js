@@ -15,8 +15,8 @@ function refreshWeather(response){
     timeElement.innerHTML= formatDate(time)
     weatherIcon.innerHTML= `<img src=" ${response.data.condition.icon_url}" class="weather-temp-icon"> `
     description.innerHTML= response.data.condition.description
-    humidityElement.innerHTML= `Humidity: ${response.data.temperature.humidity}%`
-    windElement.innerHTML= `Wind: ${response.data.wind.speed} km/h`
+    humidityElement.innerHTML= `${response.data.temperature.humidity}%`
+    windElement.innerHTML= `${response.data.wind.speed} km/h`
     
     getForecast(response.data.city)
 }
@@ -56,7 +56,7 @@ function displayforecast(response){
         forecastHtml = forecastHtml+ `
                         <div class="col" >
                             <div class="weather-forecast-day">${formatDay(day.time)}</div>
-                            <div class="weather-forecast-icon"><img src= "${day.condition.icon_url}" width= 50%></div>
+                            <div class="weather-forecast-icon"><img src= "${day.condition.icon_url}" width= 80%></div>
                             <div class="weather-forecast-temp">
                                 <div class="max-temp">${Math.round(day.temperature.maximum)}°</div>
                                 <div class="min-temp">${Math.round(day.temperature.minimum)}°</div>
